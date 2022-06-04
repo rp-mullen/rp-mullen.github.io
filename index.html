@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Ryan Mullen | Software Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+     <h1>RYAN MULLEN</h1>
+     <ul class="navigation">
+       <li><a href="https://github.com/rp-mullen" target="_blank"><img style="float:right" src="images/github.png"></a>
+       <a href="https://www.linkedin.com/in/rpmullen" target="_blank"><img style="float:right" src="images/linkedin.png"></a></li>
+       <li><a href="#about" class="nav-link">About</a></li>
+       <li><a href="#skills" class="nav-link">Skills</a></li>
+       <li><a href="#projects" class="nav-link">Projects</a></li>
+       <li><a href="#contact" class="nav-link">Contact</a></li>
+     </ul>
+     <button class="burger-menu" id="burger-menu">
+       <ion-icon class="bars" name="menu-outline"></ion-icon>
+     </button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="images/portf.png"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">HI, I'M RYAN</h2>
+        <p class="bio-text">
+          I'm an aspiring junior developer with a background in Physics, passionate about
+          math, science, technology, and software development!
+        </p>
+      </div>
+    </section>
+
+
+    <!-- More about -->
+    <section class="more-about">
+      <p>
+        <h3>
+        As a STEM educator and student of the world, I am always looking for new skills to
+        develop and technologies to learn. When not exploring
+        new languages and frameworks, I enjoy performing music, playing chess, reading,
+        hiking, and making art!
+        </h3>
+      </p>
+    </section>
+
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">SKILLS</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="images/c-.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="images/python.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="images/java.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="images/js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="images/html-5.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="images/css.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">RECENT PROJECTS</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="images/quantum.png"
+            alt="psi"
+            loading="lazy"
+            class="project-pic"
+          />
+          <a href="https://github.com/rp-mullen/schrodinger-poisson-evolver" target="_blank"><h3 class="project-title">QUANTUM PROPAGATOR</h3></a>
+          <p class="project-details">
+            A program that evolves image data as a quantum wavefunction, useful for
+              studying the dynamics of non-trivial real world systems - and fun to watch!
+          </p>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="images/chess.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <a href="https://github.com/rp-mullen/JSchess" target="_blank"><h3 class="project-title">JS CHESS</h3></a>
+          <p class="project-details">
+            A fully-functional web-based chess game built with HTML/CSS/JS
+          </p>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="images/weather.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <a href="https://github.com/rp-mullen/tokyo-DB-forecaster" target="_blank"><h3 class="project-title">WEATHER STATION</h3></a>
+          <p class="project-details">
+            An automated program that collects weather data with the OpenWeatherMap API
+            and stores it in a MariaDB Database for continual regression and weather forecasting.
+          </p>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>CONTACT</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xbjwwnpw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+    </footer>
+    <!-- Website scripts -->
+
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
